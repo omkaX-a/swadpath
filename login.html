@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SwadPath - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d5c56c.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Literata', serif;
+      background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeInBg 2s ease-in;
+    }
+    .login-modal {
+      background: white;
+      padding: 3rem;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 420px;
+      animation: slideIn 0.8s ease;
+    }
+    .login-modal h2 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #d62828;
+      font-family: 'Literata', serif;
+      font-size: 2.2rem;
+    }
+    .login-modal input {
+      width: 100%;
+      padding: 0.85rem;
+      margin-bottom: 1.1rem;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    .login-modal input:focus {
+      border-color: #d62828;
+      outline: none;
+      box-shadow: 0 0 8px rgba(214, 40, 40, 0.2);
+    }
+    .login-modal button {
+      width: 100%;
+      padding: 0.9rem;
+      background: linear-gradient(to right, #ff3c38, #ff9a8b);
+      color: white;
+      border: none;
+      border-radius: 15px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255, 60, 56, 0.3);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    .login-modal button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #d62828, #fa8072);
+    }
+    .switch {
+      margin-top: 1.3rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .switch a {
+      color: #d62828;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .switch a:hover {
+      color: #ff3c38;
+    }
+    @keyframes slideIn {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInBg {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-modal">
+    <h2><i class="fas fa-sign-in-alt"></i> Login</h2>
+    <input type="email" placeholder="Email Address" required>
+    <input type="password" placeholder="Password" required>
+    <button><i class="fas fa-arrow-right"></i> Login</button>
+    <div class="switch">Don't have an account? <a href="#">Sign up</a></div>
+  </div>
+</body>
+</html>

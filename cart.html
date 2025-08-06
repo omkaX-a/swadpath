@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SwadPath - Your Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2d9d5c56c.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Literata', serif;
+      background: linear-gradient(to right, #fffaf0, #ffe4e1);
+      padding: 2rem;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #d62828;
+    }
+    .cart-container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease;
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+    .item-name {
+      font-size: 1.2rem;
+    }
+    .item-price {
+      font-weight: bold;
+    }
+    .checkout-btn {
+      display: block;
+      margin: 2rem auto 0;
+      background: #ff3c38;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 60, 56, 0.4);
+      transition: all 0.3s ease;
+    }
+    .checkout-btn:hover {
+      background: #d62828;
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1><i class="fas fa-shopping-cart"></i> Your Cart</h1>
+  <div class="cart-container">
+    <div class="cart-item">
+      <span class="item-name">Rajma Chawal</span>
+      <span class="item-price">₹80</span>
+    </div>
+    <div class="cart-item">
+      <span class="item-name">Paneer (500g)</span>
+      <span class="item-price">₹100</span>
+    </div>
+    <div class="cart-item">
+      <span class="item-name">Tomatoes (1kg)</span>
+      <span class="item-price">₹30</span>
+    </div>
+    <button class="checkout-btn">Proceed to Checkout</button>
+  </div>
+  <footer>&copy; 2025 SwadPath | Cart View</footer>
+</body>
+</html>
